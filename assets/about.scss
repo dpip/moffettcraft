@@ -1,0 +1,48 @@
+
+.about-wrap {
+  background-color: $teal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+    .bio {
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+
+      .hero-img {
+
+        #about-title {
+          font-size: 60px;
+          font-family: $moffettcraft;
+          color: $blue;
+        }
+
+        img {
+          border-radius: 3px;
+          position: absolute;
+          width: 320px;
+          height: 40%;
+          left: 35%;
+          top: 140px;
+        }
+        .bio-text {
+          z-index: 10;
+          position: absolute;
+          top: 65%;
+          left: 20%;
+          // color: $blue;
+          width: 60%;
+          font-family: $moffettcraft;
+          color: $pavement;
+
+        }
+
+        }
+    }

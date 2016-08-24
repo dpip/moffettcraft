@@ -1,0 +1,23 @@
+$moffettcraft: 'Oswald', sans-serif;
+$yellow: rgba(251, 218, 82, 1);
+$blue: rgba(34, 84, 140, 1);
+$purple: rgba(154, 18, 179, 1);
+$orange: rgba(222, 108, 64, 1);
+$teal: rgba(160, 218, 152, 1);
+$pavement: rgba(62, 62, 62, 1);
+
+@import 'burger';
+@import 'land';
+@import 'about';
+
+
+
+body {
+  background-color: $yellow;
+
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+
+}

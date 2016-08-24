@@ -1,0 +1,245 @@
+#wrap {
+  width: 100%;
+  height: 100%;
+  color: #22548c; }
+
+#menu {
+  border: solid #22548c;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.5s ease-in-out;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 20; }
+
+.menubar {
+  width: 80px;
+  height: 10px;
+  margin: 7px 10px 10px 7px;
+  background: #22548c;
+  border-radius: 3px;
+  z-index: 10;
+  transition: 0.5s 0.5s ease-in-out, background 0.2s ease-in-out; }
+
+.menubar:nth-child(1) {
+  -webkit-animation: bars 1s;
+  animation: bars 1.8s; }
+
+.menubar:nth-child(2) {
+  -webkit-animation: bars 1.5s;
+  animation: bars 1.8s; }
+
+.menubar:nth-child(3) {
+  -webkit-animation: bars 2s;
+  animation: bars 1.8s; }
+
+@-webkit-keyframes bars {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80px; } }
+@keyframes bars {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80px; } }
+.activate {
+  width: 300px;
+  height: 100%;
+  background: #22548c;
+  z-index: 2;
+  border: solid #fbda52 6px !important;
+  border-radius: 5px !important; }
+
+.hid {
+  width: 100px;
+  height: 70px; }
+
+.menuwrap {
+  width: 100px;
+  height: 70px;
+  float: left;
+  color: #22548c; }
+
+#menuwrap:hover {
+  cursor: pointer; }
+
+.activate2 {
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+  color: #fbda52; }
+
+.hid2 {
+  transition: 0.5s ease-in-out; }
+
+.activate2 .menubar {
+  background: #fbda52;
+  color: #22548c; }
+
+.activate2 .menubar:nth-child(1) {
+  transform: rotate(45deg);
+  margin-top: 30px; }
+
+.activate2 .menubar:nth-child(2) {
+  transform: rotate(-45deg);
+  margin-top: -20px; }
+
+.activate2 .menubar:nth-child(3) {
+  opacity: 0; }
+
+.hidtext {
+  color: #fbda52;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+  top: 15%; }
+
+.shotext {
+  color: #fbda52;
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+  transition: 0.8s 0.5s ease-in-out; }
+
+#text {
+  font-size: 3vw;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 6em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7vw;
+  width: 15vw;
+  font-weight: bold;
+  cursor: pointer; }
+  #text ul {
+    list-style: none; }
+    #text ul li {
+      margin: 1.5em; }
+
+#click {
+  color: #22548c;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  margin-top: 80px;
+  -webkit-animation: move 1.8s 5s;
+  animation: move 1.8s 5s; }
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  30% {
+    margin-left: 20px; }
+  50% {
+    margin-left: -20px; }
+  70% {
+    margin-left: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes move {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  30% {
+    margin-left: 20px; }
+  50% {
+    margin-left: -20px; }
+  70% {
+    margin-left: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+#cycler {
+  position: relative;
+  top: 1em;
+  left: calc(100% / 3);
+  cursor: pointer;
+  width: 100%; }
+  #cycler #title {
+    position: relative;
+    margin-top: 2em;
+    margin-left: -1em;
+    margin-bottom: 1em;
+    color: #22548c;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    letter-spacing: 10px; }
+  #cycler .art {
+    display: inline-block;
+    margin-left: 2em; }
+    #cycler .art .art img {
+      height: 250px;
+      width: 300px; }
+
+.menu {
+  list-style: none;
+  letter-spacing: 10px;
+  margin-top: 3em;
+  margin-left: 37%;
+  color: #22548c;
+  font-size: 120px; }
+  .menu li {
+    display: inline-block; }
+
+#cycler img {
+  position: absolute;
+  z-index: 1; }
+
+#cycler img.active {
+  z-index: 3; }
+
+.about-wrap {
+  background-color: #a0da98;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.bio {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  .bio .hero-img #about-title {
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    color: #22548c; }
+  .bio .hero-img img {
+    border-radius: 3px;
+    position: absolute;
+    width: 320px;
+    height: 40%;
+    left: 35%;
+    top: 140px; }
+  .bio .hero-img .bio-text {
+    z-index: 10;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    width: 60%;
+    font-family: "Oswald", sans-serif;
+    color: #3e3e3e; }
+
+body {
+  background-color: #fbda52; }
+  body a {
+    text-decoration: none !important;
+    color: inherit !important; }
+
+/*# sourceMappingURL=index.css.map */

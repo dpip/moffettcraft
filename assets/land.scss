@@ -1,0 +1,52 @@
+
+      #cycler {
+        position:relative;
+        top: 1em;
+        left: calc(100% / 3);
+        cursor: pointer;
+        width: 100%;
+
+          #title {
+            position: relative;
+            margin-top: 2em;
+            margin-left: -1em;
+            margin-bottom: 1em;
+            color: $blue;
+            font-family: $moffettcraft;
+            font-size: 60px;
+            letter-spacing: 10px;
+          }
+
+          .art {
+              display: inline-block;
+              margin-left: 2em;
+
+                .art img {
+                  height: 250px ;
+                  width: 300px;
+
+                }
+            }
+    }
+
+    .menu {
+      list-style: none;
+      letter-spacing: 10px;
+      margin-top: 3em;
+      margin-left: 37%;
+      color: $blue;
+      font-size: 120px;
+
+        li {
+              display: inline-block;
+        }
+
+    }
+
+        #cycler img {
+          position:absolute;
+          z-index: 1;
+        }
+        #cycler img.active {
+          z-index: 3;
+        }
