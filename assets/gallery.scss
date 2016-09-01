@@ -1,54 +1,78 @@
-
-.about-wrap {
-  background-color: $teal;
+.gallery-wrap {
   position: absolute;
+  height: 1400px;
+  width: 100%;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   right: 0;
+  background-color: rgb(255, 255, 255);
+
+      .gallery-title {
+        top: 2em;
+        left: 40%;
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        font-family: $moffettcraft;
+        color: $blue;
+      }
+
+      .works {
+        width: 98%;
+        height: 800px;
+        position: absolute;
+        left: 10px;
+        top: 14em;
+
+          .row {
+            width: 100%;
+            display: block;
+            height: calc(100% / 3);
+            margin-top: 20px;
+
+              .work {
+                position: relative;
+                width: calc(99% / 3);
+                height: 100%;
+                display: inline-block;
+                box-sizing: border-box;
+
+                .frame {
+                  border: 10px solid rgba(218, 223, 225, 1);
+                  border-radius: 2px;
+                  height: 240px;
+                  width: 320px;
+                  margin-left: 20.5px;
+
+
+
+                }
+              }
+
+          }
+
+      }
+
 }
-    .bio {
-      z-index: 5;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
 
-      .hero-img {
 
-        #about-title {
-          font-size: 60px;
-          font-family: $moffettcraft;
-          color: $blue;
-        }
-
-        img {
-          border-radius: 3px;
-          position: absolute;
-          width: 320px;
-          height: 40%;
-          left: 38%;
-          top: 140px;
-        }
-        .bio-text {
-          z-index: 10;
-          position: absolute;
-          top: 65%;
-          left: 20%;
-          // color: $blue;
-          width: 60%;
-          font-family: $moffettcraft;
-          color: $pavement;
-
-        }
-
-        }
+    .frame:after {
+      color: white;
+      content:'art';
+    position:absolute;
+    width:320px; height:240px;
+    border: 10px solid rgba(0,0,0,0.6);
+    top:0; left:20.5px;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     }
 
-
-
+    .frame:hover:after {
+    opacity:1;
+    }
 
     #wrap {
       width: 100%;
@@ -111,7 +135,7 @@
       }
     }
 
-    .activate-about {
+    .activate-gallery {
       width: 98%;
       height: 100px;
       background: $blue;
@@ -123,7 +147,7 @@
     }
 
     .hid {
-      width: 100px;
+      width: 90px;
       height: 70px;
     }
 
@@ -138,32 +162,32 @@
       cursor: pointer;
     }
 
-    .activate-about2 {
+    .activate-gallery2 {
       margin-top: 10px;
       transition: 0.5s ease-in-out;
-      color: $teal;
+      color: white;
     }
 
     .hid2 {
       transition: 0.5s ease-in-out;
     }
 
-    .activate-about2 .menubar {
-      background: $teal;
+    .activate-gallery2 .menubar {
+      background: white;
       color: $blue;
     }
 
-    .activate-about2 .menubar:nth-child(1) {
+    .activate-gallery2 .menubar:nth-child(1) {
       transform: rotate(45deg);
       margin-top: 40px;
     }
 
-    .activate-about2 .menubar:nth-child(2) {
+    .activate-gallery2 .menubar:nth-child(2) {
       transform: rotate(-45deg);
       margin-top: -20px;
     }
 
-    .activate-about2 .menubar:nth-child(3) {
+    .activate-gallery2 .menubar:nth-child(3) {
       opacity: 0;
     }
 
@@ -180,10 +204,10 @@
 
     }
 
-    .shotext-about {
-      color: $teal;
+    .shotext-gallery {
+      color: white;
       opacity: 1;
-      top: 10px;
+      top: 100px;
       visibility: visible;
       transition: 0.8s 0.5s ease-in-out;
 

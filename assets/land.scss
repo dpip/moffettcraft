@@ -2,14 +2,18 @@
       #cycler {
         position:relative;
         top: 1em;
-        left: calc(100% / 3);
+        left: 32%;
         cursor: pointer;
         width: 100%;
+
+           img {
+            border-radius: 5px;
+          }
 
           #title {
             position: relative;
             margin-top: 2em;
-            margin-left: -1em;
+            margin-left: -.1em;
             margin-bottom: 1em;
             color: $blue;
             font-family: $moffettcraft;
@@ -33,7 +37,7 @@
       list-style: none;
       letter-spacing: 10px;
       margin-top: 3em;
-      margin-left: 32%;
+      margin-left: 37%;
       color: $blue;
       font-size: 120px;
 
@@ -44,7 +48,6 @@
     }
 
         #cycler img {
-
           position:absolute;
           z-index: 1;
         }
