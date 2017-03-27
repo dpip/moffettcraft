@@ -1,0 +1,151 @@
+$break-mid: 1200px;
+$break-small: 1070px;
+
+// #exp {
+//   width: 100%;
+//   height: 15%;
+//   background-color: rgba(119, 211, 210, 0.7);
+//   position: absolute;
+// }
+
+
+#about-wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  position: relative;
+  #about-hero {
+    // margin-top: 10%;
+    // filter: grayscale(10%);
+    height: 100%;
+    width: 100%;
+    display: block;
+    float: left;
+    position: absolute;
+    // top: 15%;
+    // if css and image live in subdorectories you have to begin the path with ".."
+    background-image: url(../assets/images/momma-alaska.jpg);
+      -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    //background position center twice (below) ensures that the image covers the div and is centered x and y.
+    background-position: center center;
+    filter: grayscale(25%);
+  }
+  #joy {
+    color: $purple;
+  }
+  #signature {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    span {
+    }
+  }
+  #media {
+    display: inline-table;
+    width: 100%;
+    text-align: center;
+    float: left;
+    table-layout: fixed;
+      div {
+        display: table-cell;
+        font-size: 30px;
+        color: $purple;
+        font-weight: 600;
+        transition: .25s;
+      }
+      span {
+        opacity: 0;
+        font-size: 0;
+        transition: .25s;
+      }
+      div:hover {
+        color: white;
+          span {
+            opacity: 1;
+            font-size: 30px;
+          }
+      }
+  }
+  #about-home {
+    // font-size: 20px;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(247, 241, 92);
+    // color: rgb(251, 24, 3);
+    a{
+      width: 5%;
+    }
+
+  }
+  #bio-wrap {
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    left: 50%;
+    top: 15%;
+    // top: 15%;
+    // background: rgba(251, 218, 82, 0.6);
+    background-color: rgba(119, 211, 210, 0.7);
+
+      #bio-title {
+        height: 25%;
+        width: 100%;
+        font-size: 40px;
+        // color: $pavement;
+        color: white;
+        text-align: center;
+          div {
+            display: inline-block;
+            padding-top: 5%;
+          }
+
+      }
+      #bio-body {
+        height: 65%;
+        width: 84%;
+        margin-left: 8%;
+        font-size: 18px;
+        color: $pavement;
+        // color: rgb(26, 4, 11);
+          div {
+            text-align: center;
+            margin-top: 2em;
+            color: white;
+            font-size: 20px;
+          }
+      }
+      #bio-contacts {
+        height: 10%;
+        width: 60%;
+        margin-left: 20%;
+
+          .bio-contacts {
+            display: inline-block;
+            width: calc(100% / 3);
+            float: left;
+            text-align: center;
+            font-size: 2.5em;
+            color: white;
+            cursor: pointer;
+          }
+
+          i:hover {
+            color: $pavement;
+            transition: all 0.25s;
+
+          }
+
+
+      }
+  }
+}

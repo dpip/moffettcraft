@@ -1,0 +1,168 @@
+<!-- <div id="wrap">
+  <div id="menu" class="hid">
+
+    <div id="menuwrap" class="hid2">
+
+        <div class="menubar" id = "menubar-one" ></div>
+        <div class="menubar" id = "menubar-two" ></div>
+        <div class="menubar" id = "menubar-three" ></div>
+        <div class="menubar" id = "menubar-four" ></div>
+
+    </div>
+
+
+    <div class="hidtext" id="text">
+
+        <div class = "hidtext-dilb" >
+          <div class = "text-margin" id = "menu-gallery"><a ng-click="toTheGallery()">Gallery</a></div>
+        </div>
+          <div class = "hidtext-dilb" >
+            <div class = "text-margin" id = "menu-about"><a ng-click="toTheAbout()">About</a></div>
+          </div>
+        <div class = "hidtext-dilb" >
+          <div class = "text-margin" id = "menu-contact"><a ng-click="toTheContact()">Contact</a></div>
+        </div>
+        <div class = "hidtext-dilb" >
+          <a href="https://www.etsy.com/shop/moffettcraftarts"><div class = "text-margin">Shop</div></a>
+        </div>
+        <div class = "hidtext-dilb" id = "arrow-float">
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div class = "home-wrap">
+          <div class = "title_img_wrap">
+              <div id = "cycler">
+
+              <div id = "title" > MOFFETTCRAFT </div>
+              <div class = "art">
+               <img class = "active" src = "assets/images/turtle.jpg" ></img>
+                 <img src = "assets/images/MoffettcraftArts_2016_Bamboo_Van_Gogh_-_1_1024x1024.jpg" ></img>
+                 <img src = "assets/images/Reunion_notecard_small_res_large.jpg" ></img>
+               <img src = "assets/images/boat.jpg" ></img>
+             </div>
+            </div>
+
+          </div>
+    </div>
+    <div class = "gallery-wrap" id = 'scroll-gallery'>
+
+    <div class = "gallery-title">
+      <div class = "g-title-text"> GALLERY
+
+      </div>
+    </div>
+
+
+      <div class = "works">
+        <div class = "row">
+        <div class = "work">
+          <div class = "frame" ng-repeat = "art in gallery" ng-mouseenter = "hidden = true" ng-mouseleave = "hidden = false">
+            <img src = "{{art.image}}"></img>
+            <div class = "hidden" ng-show = "hidden" >
+              {{art.description}}
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  <div class = "click-gallery" ng-click = "openGallery()"></div>
+</div>
+
+<div class = "about-wrap" id = "scroll-about">
+
+<div class = "bio">
+
+  <div class = "bio-text-one">
+    Hard Work &nbsp;&nbsp; Joy &nbsp;&nbsp; Expression
+  </div>
+
+  <div class = "hero-img">
+
+    <div class = "about-me-image"><img src = "assets/images/momma-alaska.jpg"></img></div>
+
+    <div class = "bio-text-two">
+     Often those who are not artists think that it is easy to produce items, and therefore the value of the item is lessened in their eyes. I am of the belief that when an artist sincerely offers energy, heart and time into an artistic piece that a small part of the artist is also given. Value handmade art!
+    <br><br>
+    <span> - Luara Myers </span>
+
+    </div>
+
+  </div>
+</div>
+<div class  = "footer-wrap" id = "scroll-contact">
+  <div class = "contact-containers-wrap">
+      <div class = "contact-containers" id = "facebook" >
+        <a href="https://www.facebook.com/moffettcraftarts.frameableart">
+          <div ng-mouseenter = "hoverFB = true" ng-mouseleave = "hoverFB = false"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+          <div class = "hoverContact" id = "hoverFB"ng-show = "hoverFB" >Facebook </div>
+        </a>
+      </div>
+      <div class = "contact-containers" id = "phone" >
+          <i class="fa fa-phone" aria-hidden="true" ng-mouseenter = "hoverPhone = true" ng-mouseleave = "hoverPhone = false"></i>
+          <div class = "hoverContact" ng-show = "hoverPhone" > &nbsp; (919) 333-3064 </div>
+      </div>
+      <div class = "contact-containers" id = "email" >
+        <i class="fa fa-envelope" aria-hidden="true" ng-mouseenter = "hoverEmail = true" ng-mouseleave = "hoverEmail = false"></i>
+           <div class = "hoverContact" ng-show = "hoverEmail" > &nbsp; moffettcraft@gmail.com </div>
+      </div>
+      <div class = "contact-containers" id = "etsy" >
+        <a href="https://www.etsy.com/shop/moffettcraftarts">
+        <div ng-mouseenter = "hoverE = true" ng-mouseleave = "hoverE = false"><i class="fa fa-etsy" aria-hidden="true" ></i></div>
+        <div class = "hoverContact" id = "hoverE" ng-show = "hoverE" >Etsy </div>
+      </a>
+      </div>
+  </div>
+</div>
+</div> --
+
+
+<!-- <div id="menu" class="hid">
+
+  <div id="menuwrap" class="hid2">
+
+      <div class="menubar" id = "menubar-one" ></div>
+      <div class="menubar" id = "menubar-two" ></div>
+      <div class="menubar" id = "menubar-three" ></div>
+      <div class="menubar" id = "menubar-four" ></div>
+
+  </div>
+
+
+  <div class="hidtext" id="text">
+
+      <div class = "hidtext-dilb" >
+        <div class = "text-margin" id = "menu-gallery"><a href="/#/gallery">Gallery</a></div>
+      </div>
+        <div class = "hidtext-dilb" >
+          <div class = "text-margin" id = "menu-about"><a href="#/about">About</a></div>
+        </div>
+      <div class = "hidtext-dilb" >
+        <div class = "text-margin" id = "menu-contact"><a href="toTheContact()">Contact</a></div>
+      </div>
+      <div class = "hidtext-dilb" >
+        <a href="https://www.etsy.com/shop/moffettcraftarts"><div class = "text-margin">Shop</div></a>
+      </div>
+      <div class = "hidtext-dilb" id = "arrow-float">
+
+  </div>
+
+</div>
+</div> -->
+
+<!-- <div class  = "vert-menu">
+  <div class = "menu-nav" id = "vm1" ><a href = "/#/gallery"><div></div><i class="fa fa-picture-o" aria-hidden="true"></i></a></div>
+    <div class = "menu-nav" id = "vm2" ><a href = "/#/about"><div></div><i class="fa fa-user-o" aria-hidden="true"></i></a></div>
+  <div class = "menu-nav" id = "vm3" >
+    <a href = "/#/contact"><div></div><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+  <ul>
+    <li><a href="https://www.facebook.com/moffettcraftarts.frameableart">Facebook</a></li>
+    <li><a href="https://shopvida.com/collections/moffett-1?page=6">Vida</a></li>
+    <li><a href="https://www.etsy.com/shop/MoffettCraftArts?ref=l2-shopheader-name">Etsy</a></li>
+    <ul/>
+  </div>
+</div> -->

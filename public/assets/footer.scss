@@ -1,0 +1,59 @@
+
+.footer-wrap {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  z-index: 190;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+    .contact-containers-wrap {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+        font-family: $moffettcraft;
+        color: $pavement;
+
+
+       .contact-containers {
+         margin-top: 15px;
+         float: left;
+         display: inline-block;
+         vertical-align: top;
+         width: calc(100% / 4);
+         text-align: center;
+           .hoverContact {
+             color: $pavement;
+             position: relative;
+             height: 100px;
+             width: 100%;
+             margin-top: 10px;
+           }
+           #hoverFB {
+            display: inline;
+            left: 0;
+            margin-top: 40px;
+            margin-left: -35px;
+           }
+           #hoverE {
+            text-align: center;
+            margin-top: 10px;
+            margin-left: -10px;
+           }
+           div {
+             float: left;
+            //  width: 100%;
+           }
+              a {
+                position: absolute;
+                z-index: 100;
+              }
+             .fa {
+               font-size: 30px;
+               color: $teal;
+              // color: rgb(245, 105, 14);
+             }
+
+       }
+   }
+}

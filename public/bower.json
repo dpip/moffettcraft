@@ -1,0 +1,24 @@
+{
+  "name": "moffett",
+  "homepage": "https://github.com/dpip/moffettcraft",
+  "authors": [
+    "Daniel <dpip.nc@gmail.com>"
+  ],
+  "description": "Laura Myers",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-carousel": "^1.0.1",
+    "angular-scroll": "^1.0.0",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3",
+    "masonry": "^4.1.1"
+  }
+}

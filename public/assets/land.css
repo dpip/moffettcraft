@@ -1,0 +1,106 @@
+#land-wrap {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 0px;
+  float: left;
+  position: relative; }
+  #land-wrap #land-hero {
+    height: 70%;
+    width: 100%;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 15%;
+    box-shadow: 0 0 50px #888888;
+    background-image: url(../assets/images/Moffett.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  #land-wrap .vert-menu {
+    height: 40%;
+    top: 30%;
+    width: 100px;
+    position: absolute;
+    display: inline-table; }
+    #land-wrap .vert-menu .menu-nav {
+      display: block;
+      color: rgba(154, 18, 179, 0.7);
+      font-size: 35px;
+      height: calc(100% / 3);
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      margin: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: .1em; }
+      #land-wrap .vert-menu .menu-nav div {
+        padding-top: 25%; }
+    #land-wrap .vert-menu .menu-nav:hover {
+      background-color: rgba(154, 18, 179, 0.7);
+      color: white;
+      width: 160%;
+      border-radius: 0 .1em .1em 0; }
+      #land-wrap .vert-menu .menu-nav:hover div {
+        padding-top: 10%; }
+    #land-wrap .vert-menu #vm1:hover i {
+      font-size: 0; }
+    #land-wrap .vert-menu #vm1:hover div:after {
+      content: 'Gallery';
+      font-size: 28px; }
+    #land-wrap .vert-menu #vm2:hover div:after {
+      content: 'About';
+      font-size: 28px; }
+    #land-wrap .vert-menu #vm2:hover i {
+      font-size: 0; }
+    #land-wrap .vert-menu #vm3 {
+      position: relative; }
+      #land-wrap .vert-menu #vm3 div:after {
+        padding-top: 2%; }
+      #land-wrap .vert-menu #vm3 ul {
+        font-size: 0;
+        list-style: none; }
+    #land-wrap .vert-menu #vm3:hover {
+      width: 220%; }
+      #land-wrap .vert-menu #vm3:hover ul {
+        font-size: 16px;
+        float: right;
+        margin-right: 15px;
+        margin-top: -60px;
+        text-align: left; }
+      #land-wrap .vert-menu #vm3:hover i {
+        font-size: 0; }
+      #land-wrap .vert-menu #vm3:hover div:after {
+        max-height: calc(100% / 6);
+        width: 80%;
+        float: left;
+        content: 'Contact';
+        font-size: 28px; }
+      #land-wrap .vert-menu #vm3:hover li:hover {
+        text-decoration: underline; }
+    #land-wrap .vert-menu #vm4 div:after {
+      padding-top: 2%; }
+    #land-wrap .vert-menu #vm4:hover div:after {
+      content: 'Home';
+      font-size: 28px; }
+    #land-wrap .vert-menu #vm4:hover i {
+      font-size: 0; }
+    #land-wrap .vert-menu #vm5 div:after {
+      font-size: 45px;
+      font-weight: 600;
+      padding-top: 2%;
+      content: 'V'; }
+    #land-wrap .vert-menu #vm5:hover div:after {
+      content: 'Vida'; }
+    #land-wrap .vert-menu #vm6 div:after {
+      font-size: 45px;
+      font-weight: 600;
+      padding-top: 2%;
+      content: 'E'; }
+    #land-wrap .vert-menu #vm6:hover div:after {
+      content: 'Etsy'; }
+
+/*# sourceMappingURL=land.css.map */

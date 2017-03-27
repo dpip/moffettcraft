@@ -1,0 +1,189 @@
+$break-mid: 1200px;
+$break-small: 1070px;
+
+
+$moffettcraft: 'Oswald', sans-serif;
+$yellow: rgba(251, 218, 82, 1);
+$blue: rgba(1, 0, 169, 1);
+$purple: rgba(154, 18, 179, 1);
+$orange: rgba(222, 108, 64, 1);
+$teal: rgba(160, 218, 152, 1);
+$pavement: rgba(62, 62, 62, 1);
+
+
+
+
+#land-wrap {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 0px;
+  float: left;
+  position: relative;
+
+  #land-hero {
+    height: 70%;
+    width: 100%;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 15%;
+    box-shadow: 0 0 50px #888888;
+    // if css and image live in subdorectories you have to begin the path with ".."
+    background-image: url(../assets/images/Moffett.jpg);
+      -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+    // background-size: cover;
+    background-repeat:no-repeat;
+    //background position center twice (below) ensures that the image covers the div and is centered x and y.
+    background-position: center center;
+      img {
+        // height: inherit;
+        // width: inherit;
+      }
+  }
+  .vert-menu {
+    height: 40%;
+    top: 30%;
+    width: 100px;
+    position: absolute;
+    display: inline-table;
+    // background-color: rgba(254, 254, 254, 1);
+    // background-color: rgba(119, 211, 210, .7);
+      .menu-nav {
+        display: block;
+        // color: rgba( 191, 1, 73, 0.7);
+        color: rgba(154, 18, 179, .7);
+        font-size: 35px;
+        height: calc(100% / 3);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        width: 100%;
+        margin: 5px;
+        // background-color: rgba(119, 211, 210, 0.7);
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: .1em;
+          div {
+            padding-top: 25%;
+          }
+      }
+      .menu-nav:hover {
+        background-color: rgba(154, 18, 179, .7);
+        color: white;
+        width: 160%;
+        border-radius: 0 .1em .1em 0;
+          div {
+            padding-top: 10%;
+          }
+      }
+      #vm1 {
+        // background-color: rgb(1, 1, 104);
+        div:after {
+      }
+
+    }
+    #vm1:hover {
+      i {
+        font-size: 0;
+      }
+        div:after {
+        content: 'Gallery';
+        font-size: 28px;
+      }
+    }
+      #vm2 {
+        // background-color: rgb(2, 0, 175);
+        div:after {
+      }
+
+    }
+    #vm2:hover {
+        div:after {
+        content: 'About';
+        font-size: 28px;
+      }
+      i {
+        font-size: 0;
+      }
+    }
+      #vm3 {
+        position: relative;
+        div:after {
+        padding-top: 2%;
+      }
+      ul {
+        font-size: 0;
+        list-style: none;
+      }
+
+    }
+    #vm3:hover {
+      width: 220%;
+        ul {
+          font-size: 16px;
+          float: right;
+          margin-right: 15px;
+          margin-top: -60px;
+          text-align: left;
+        }
+        i {
+          font-size: 0;
+        }
+        div:after {
+        max-height: calc(100% / 6);
+        width: 80%;
+        float: left;
+        content: 'Contact';
+        font-size: 28px;
+      }
+        li:hover {
+          text-decoration: underline;
+        }
+    }
+      #vm4 {
+        div:after {
+        padding-top: 2%;
+      }
+
+    }
+    #vm4:hover {
+        div:after {
+        content: 'Home';
+        font-size: 28px;
+      }
+      i {
+        font-size: 0;
+      }
+    }
+      #vm5 {
+        div:after {
+        font-size: 45px;
+        font-weight: 600;
+        padding-top: 2%;
+        content: 'V';
+      }
+
+    }
+    #vm5:hover {
+        div:after {
+        content: 'Vida';
+      }
+    }
+    #vm6 {
+      div:after {
+      font-size: 45px;
+      font-weight: 600;
+      padding-top: 2%;
+      content: 'E';
+    }
+
+  }
+  #vm6:hover {
+      div:after {
+      content: 'Etsy';
+    }
+  }
+  }
+}

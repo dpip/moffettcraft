@@ -1,0 +1,290 @@
+
+// Heavily Refrenced : http://codepen.io/dimitristahos/pen/doPNwr
+// Removed menu border. Looks more fluid in comparison to the bare text for title
+
+#menu {
+  // border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.5s ease-in-out;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+.fix-menu {
+  position: fixed !important;
+  margin-left: -10px;
+  width: 100%;
+  background-color: white;
+  opacity: .8;
+  z-index: 195;
+
+  // color: blue !important;
+
+}
+.bottom-Menu {
+  background-color: $pavement;
+  z-index: 195;
+}
+
+.menubar {
+  width: 60px;
+  height: 7px;
+  margin: 7px 14px 14.5px 7px;
+  background-color: $blue;
+  border-radius: 3px;
+  z-index: 10;
+  transition: 0.5s 0.5s ease-in-out, background 0.2s ease-in-out;
+}
+
+.menubar:nth-child(1) {
+  -webkit-animation: bars 1s;
+  animation: bars 1.8s;
+}
+
+.menubar:nth-child(2) {
+  -webkit-animation: bars 1.5s;
+  animation: bars 1.8s;
+}
+
+.menubar:nth-child(3) {
+  -webkit-animation: bars 2s;
+  animation: bars 1.8s;
+}
+
+.menubar:nth-child(4) {
+  -webkit-animation: bars 2s;
+  animation: bars 1.8s;
+}
+
+@-webkit-keyframes bars {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+.activate {
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  // border-radius: 5px!important;
+  // pretty slick animation moving menu to bottom but forces user to scroll to the bottom
+  background-color: white;
+  opacity: .7;
+  top: 0;
+  color: $blue !important;
+
+}
+
+.hid {
+  width: 100px;
+  height: 70px;
+  color: $blue;
+}
+
+.menuwrap {
+  width: 100px;
+  height: 70px;
+  float: left;
+  color: $blue;
+  // position: fixed;
+  //    top: 0;
+}
+
+#menuwrap:hover {
+  cursor: pointer;
+}
+
+.activate2 {
+  margin-top: 10px;
+  transition: .7s ease-in-out;
+  // color: $yellow;
+  color: $blue;
+}
+
+.hid2 {
+  transition: .7s ease-in-out;
+}
+
+.activate2 .menubar {
+  // background: $blue;
+  color: $blue;
+}
+
+
+.activate2 .menubar:nth-child(1) {
+  transform: rotate(55deg);
+  margin-top: 40px;
+  width: 22px;
+  margin-left: 16.6px;
+  color: $blue;
+}
+
+.activate2 .menubar:nth-child(2) {
+  transform: rotate(-75deg);
+  margin-top: -17px;
+  width: 25px;
+  color: $blue;
+
+}
+
+.activate2 .menubar:nth-child(3) {
+  // opacity: 0;
+  transform: rotate(-55deg);
+  margin-top: -26px;
+  margin-left: 26px;
+  width: 22px;
+  color: $blue;
+}
+
+.activate2 .menubar:nth-child(4) {
+  transform: rotate(75deg);
+  margin-top: -17px;
+  width: 25px;
+  margin-left: 33.4px;
+  color: $blue;
+
+}
+
+.hidtext {
+  color: $blue;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+  top: 25%;
+  // margin-left: -300px;
+
+  .hidtext-dilb {
+    // display: inline-block;
+  }
+
+}
+
+.shotext {
+  color: $blue;
+  opacity: 1;
+  top: 10px;
+  visibility: visible;
+  transition: 0.8s 0.5s ease-in-out;
+  z-index: 195;
+  // display: none;
+}
+
+#text {
+  font-size: 24px;
+  font-family: $moffettcraft;
+  text-align: center;
+  margin-top: -1.8em;
+  font-weight: bold;
+  cursor: pointer;
+
+    div {
+      margin-top: 3px;
+    }
+
+    div {
+      display: inline-block;
+      width: 20%;
+    }
+
+}
+
+#click {
+  color: $blue !important;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  margin-top: 80px;
+  -webkit-animation: move 1.8s 5s;
+  animation: move 1.8s 5s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: -20px;
+  }
+  70% {
+    margin-left: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: -20px;
+  }
+  70% {
+    margin-left: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+div.hidtext-dilb {
+  display: inline-block;
+  width: 100px;
+    a {
+      display: inline-block;
+    }
+}
+#arrow-float {
+  font-size: 60px;
+  // color: $yellow;
+  float: right;
+  // #longer {
+  //   position: absolute;
+  //   height: 70px;
+  //   width: 8.2px;
+  //   background-color: $blue;
+  //   opacity: 1;
+  //   margin-top: -126px;
+  //   right: 24px;
+  // }
+    a {
+      position: absolute;
+      // margin-top: -56px;
+      margin-top: -76px;
+      right: 15px;
+    }
+
+}
