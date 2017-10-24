@@ -1,24 +1,35 @@
 /*
 Error: Undefined variable: "$purple".
-        on line 39 of ./assets/about.scss
+        on line 55 of ./assets/about.scss
 
-34:     //background position center twice (below) ensures that the image covers the div and is centered x and y.
-35:     background-position: center center;
-36:     filter: grayscale(25%);
-37:   }
-38:   #joy {
-39:     color: $purple;
-40:   }
-41:   #signature {
-42:     position: relative;
-43:     bottom: 0%;
-44:     left: 0%;
+50:     float: left;
+51:     table-layout: fixed;
+52:       div {
+53:         display: table-cell;
+54:         font-size: 30px;
+55:         color: $purple;
+56:         font-weight: 600;
+57:         transition: .25s;
+58:       }
+59:       span {
+60:         opacity: 0;
 
 Backtrace:
-./assets/about.scss:39
+./assets/about.scss:55
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
@@ -76,4 +87,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$purple\".\A         on line 39 of ./assets/about.scss\A \A 34:     //background position center twice (below) ensures that the image covers the div and is centered x and y.\A 35:     background-position: center center;\A 36:     filter: grayscale(25%);\A 37:   }\A 38:   #joy {\A 39:     color: $purple;\A 40:   }\A 41:   #signature {\A 42:     position: relative;\A 43:     bottom: 0%;\A 44:     left: 0%;"; }
+  content: "Error: Undefined variable: \"$purple\".\A         on line 55 of ./assets/about.scss\A \A 50:     float: left;\A 51:     table-layout: fixed;\A 52:       div {\A 53:         display: table-cell;\A 54:         font-size: 30px;\A 55:         color: $purple;\A 56:         font-weight: 600;\A 57:         transition: .25s;\A 58:       }\A 59:       span {\A 60:         opacity: 0;"; }

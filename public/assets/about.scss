@@ -1,25 +1,20 @@
 $break-mid: 1200px;
 $break-small: 1070px;
 
-// #exp {
-//   width: 100%;
-//   height: 15%;
-//   background-color: rgba(119, 211, 210, 0.7);
-//   position: absolute;
-// }
+
 
 
 #about-wrap {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  margin: 0;
   float: left;
   position: relative;
+  background-color: rgba(119, 211, 210, 0.1);
   #about-hero {
-    // margin-top: 10%;
-    // filter: grayscale(10%);
     height: 100%;
     width: 100%;
+    // margin-top: 15vh;
     display: block;
     float: left;
     position: absolute;
@@ -35,15 +30,17 @@ $break-small: 1070px;
     background-position: center center;
     filter: grayscale(25%);
   }
-  #joy {
-    color: $purple;
-  }
+
   #signature {
     position: relative;
     bottom: 0%;
-    left: 0%;
+    left: -6px;
     width: 100%;
+    color: white !important;
     span {
+      padding-left: 0 !important;
+      color: white;
+      // color: yellow;
     }
   }
   #media {
@@ -88,21 +85,24 @@ $break-small: 1070px;
 
   }
   #bio-wrap {
-    position: absolute;
-    height: 70%;
+    position: relative;
+    height: 85vh;
     width: 50%;
     left: 50%;
-    top: 15%;
+    top: 15vh;
+    font-family: 'Allerta', sans-serif;
     // top: 15%;
     // background: rgba(251, 218, 82, 0.6);
-    background-color: rgba(119, 211, 210, 0.7);
+    background-color: rgba(119, 211, 210, 0.9);
+    // background-color: rgba(0, 255, 210, 0.9);
+
 
       #bio-title {
-        height: 25%;
+        height: 10%;
         width: 100%;
         font-size: 40px;
-        // color: $pavement;
-        color: white;
+        // color: $yellow;
+        color: yellow;
         text-align: center;
           div {
             display: inline-block;
@@ -111,17 +111,23 @@ $break-small: 1070px;
 
       }
       #bio-body {
-        height: 65%;
+        height: 70%;
         width: 84%;
         margin-left: 8%;
-        font-size: 18px;
-        color: $pavement;
+        font-size: 1.5vw;
+        // color: $pavement;
+        color: white;
         // color: rgb(26, 4, 11);
           div {
             text-align: center;
             margin-top: 2em;
             color: white;
             font-size: 20px;
+          }
+          span {
+            color:  yellow;
+            // padding-left: 25px;
+            font-size: 30px;
           }
       }
       #bio-contacts {

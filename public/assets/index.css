@@ -211,7 +211,7 @@ div.hidtext-dilb {
     position: absolute;
     top: 15%;
     box-shadow: 0 0 50px #888888;
-    background-image: url(../assets/images/Moffett.jpg);
+    background-image: url(../assets/images/Moffettcopy.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -302,11 +302,12 @@ div.hidtext-dilb {
       content: 'Etsy'; }
 
 #about-wrap {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  margin: 0;
   float: left;
-  position: relative; }
+  position: relative;
+  background-color: rgba(119, 211, 210, 0.1); }
   #about-wrap #about-hero {
     height: 100%;
     width: 100%;
@@ -321,13 +322,15 @@ div.hidtext-dilb {
     background-repeat: no-repeat;
     background-position: center center;
     filter: grayscale(25%); }
-  #about-wrap #joy {
-    color: #9a12b3; }
   #about-wrap #signature {
     position: relative;
     bottom: 0%;
-    left: 0%;
-    width: 100%; }
+    left: -6px;
+    width: 100%;
+    color: white !important; }
+    #about-wrap #signature span {
+      padding-left: 0 !important;
+      color: white; }
   #about-wrap #media {
     display: inline-table;
     width: 100%;
@@ -360,32 +363,36 @@ div.hidtext-dilb {
     #about-wrap #about-home a {
       width: 5%; }
   #about-wrap #bio-wrap {
-    position: absolute;
-    height: 70%;
+    position: relative;
+    height: 85vh;
     width: 50%;
     left: 50%;
-    top: 15%;
-    background-color: rgba(119, 211, 210, 0.7); }
+    top: 15vh;
+    font-family: 'Allerta', sans-serif;
+    background-color: rgba(119, 211, 210, 0.9); }
     #about-wrap #bio-wrap #bio-title {
-      height: 25%;
+      height: 10%;
       width: 100%;
       font-size: 40px;
-      color: white;
+      color: yellow;
       text-align: center; }
       #about-wrap #bio-wrap #bio-title div {
         display: inline-block;
         padding-top: 5%; }
     #about-wrap #bio-wrap #bio-body {
-      height: 65%;
+      height: 70%;
       width: 84%;
       margin-left: 8%;
-      font-size: 18px;
-      color: #3e3e3e; }
+      font-size: 1.5vw;
+      color: white; }
       #about-wrap #bio-wrap #bio-body div {
         text-align: center;
         margin-top: 2em;
         color: white;
         font-size: 20px; }
+      #about-wrap #bio-wrap #bio-body span {
+        color: yellow;
+        font-size: 30px; }
     #about-wrap #bio-wrap #bio-contacts {
       height: 10%;
       width: 60%;
@@ -402,139 +409,42 @@ div.hidtext-dilb {
         color: #3e3e3e;
         transition: all 0.25s; }
 
-.gallery-wrap {
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0; }
-  .gallery-wrap #gallery-header {
-    max-width: 100%;
-    height: 200px;
-    text-align: left; }
-    .gallery-wrap #gallery-header #header-wrap {
-      width: 100%;
-      height: 100%;
-      display: inline-table; }
-      .gallery-wrap #gallery-header #header-wrap .header-content {
-        display: table-cell; }
-        .gallery-wrap #gallery-header #header-wrap .header-content input {
-          width: 200px;
-          height: 2.5em;
-          border-radius: 2px;
-          outline: none;
-          text-indent: 5px; }
-        .gallery-wrap #gallery-header #header-wrap .header-content i {
-          padding-right: 5px; }
-      .gallery-wrap #gallery-header #header-wrap #gallery-title {
-        font-size: 6em; }
-        .gallery-wrap #gallery-header #header-wrap #gallery-title span {
-          color: #9a12b3;
-          padding-left: 20%;
-          padding-top: 1em; }
-  .gallery-wrap .vert-menu {
-    position: fixed;
-    z-index: 100; }
-  .gallery-wrap .works {
-    width: 90%;
-    height: 100%;
-    background-color: #eaeaea;
-    -webkit-box-shadow: 0 0 10px #888888;
-    box-shadow: 0 0 10px #888888;
-    margin-top: 0;
-    float: left;
-    margin-left: 5%; }
-    .gallery-wrap .works .row {
-      display: inline-table;
-      width: 100%;
-      margin-top: 20px;
+#gallery-wrap {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #f5f4f1;
+  padding-bottom: 5vh;
+  box-shadow: 0 0 50px #888888; }
+  #gallery-wrap .R3 {
+    display: flex;
+    flex: 0 0 48%; }
+    #gallery-wrap .R3 .canvas {
+      position: relative;
+      width: 90%;
+      margin-top: 10%;
       margin-left: 5%;
-      font-size: 0;
-      float: left; }
-      .gallery-wrap .works .row .work {
+      float: left;
+      display: block;
+      vertical-align: top;
+      border: 8px solid #eee;
+      border-radius: 4px;
+      height: auto; }
+      #gallery-wrap .R3 .canvas .painting__description {
+        width: 100%;
+        position: absolute;
+        z-index: 40;
+        justify-content: center;
+        text-align: center;
+        font-size: 5rem; }
+      #gallery-wrap .R3 .canvas img {
         float: left;
-        font-size: 0;
-        display: table-cell; }
-        .gallery-wrap .works .row .work div.frame {
-          position: relative;
-          margin: 20px;
-          border-radius: 2px;
-          height: 375px;
-          width: 320px;
-          background-color: white;
-          float: left; }
-          @media screen and (max-width: 1200px) {
-            .gallery-wrap .works .row .work div.frame {
-              width: 440px !important;
-              height: 360px; } }
-          @media screen and (max-width: 1070px) {
-            .gallery-wrap .works .row .work div.frame {
-              width: 820px !important;
-              height: 640px; } }
-          .gallery-wrap .works .row .work div.frame img {
-            max-height: 90%;
-            max-width: 90%;
-            margin: 5%;
-            transition: all 0.25s; }
-          .gallery-wrap .works .row .work div.frame img:hover {
-            max-height: 100%;
-            max-width: 100%;
-            margin: 0; }
-
-.art-description {
-  position: absolute;
-  bottom: 80px;
-  font-size: 20px;
-  color: #3e3e3e;
-  text-align: center;
-  width: 100%; }
-
-* {
-  box-sizing: border-box; }
-
-.gallery-nav {
-  color: #0100a9 !important; }
-
-/* ---- grid ---- */
-.grid {
-  margin-top: 10%;
-  background: #EEE;
-  max-width: 90%;
-  margin-left: 5%; }
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both; }
-
-/* ---- grid-item ---- */
-.grid-sizer,
-.grid-item {
-  width: 20%; }
-
-.grid-item {
-  height: 200px;
-  float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  margin: 5px; }
-
-.grid-item--width2 {
-  width: 40%; }
-
-.grid-item--width3 {
-  width: 50%;
-  height: 20%; }
-
-.grid-item--height2 {
-  height: 200px; }
-
-.grid-item--height3 {
-  height: 260px; }
-
-.grid-item--height4 {
-  height: 360px; }
+        width: 100%;
+        height: 100%;
+        display: block; }
 
 .footer-wrap {
   position: absolute;
@@ -581,24 +491,37 @@ div.hidtext-dilb {
         font-size: 30px;
         color: #a0da98; }
 
-.about-menu .about-nav {
-  color: white !important; }
+.about-menu {
+  background-color: white; }
+  .about-menu .about-nav {
+    color: blue !important; }
+    .about-menu .about-nav span:hover {
+      box-shadow: 0 0 10px white !important; }
+
+.gallery-menu .gallery-nav {
+  color: #3e3e3e !important; }
+  .gallery-menu .gallery-nav span:hover {
+    box-shadow: 0 0 10px white !important; }
 
 #menu {
   width: 100%;
   height: 15%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: inline-table;
-  table-layout: fixed; }
+  table-layout: fixed;
+  z-index: 100;
+  background-color: white;
+  opacity: 0.8; }
   #menu .nav {
     display: table-cell;
     height: 100%;
     font-size: 20px;
     text-align: center;
     vertical-align: middle;
-    color: #fd4602; }
+    color: #fd4602;
+    font-size: 30px; }
     #menu .nav span {
       cursor: pointer;
       transition: all .15s;
@@ -606,7 +529,7 @@ div.hidtext-dilb {
       border-radius: 4px; }
     #menu .nav span:hover {
       font-weight: 600;
-      font-size: 22px;
+      font-size: 32px;
       box-shadow: 0 0 10px #888888; }
 
 #pop-tact {
@@ -681,6 +604,14 @@ div.hidtext-dilb {
       #pop-tact #contact-media div:hover span {
         opacity: 1;
         font-size: 30px; }
+
+#blog_wrap {
+  height: 100%;
+  width: 100%;
+  float: left;
+  margin: 0; }
+  #blog_wrap .ex-wrap {
+    margin-top: 50%; }
 
 html, body, .scope {
   height: 100%;

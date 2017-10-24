@@ -1,8 +1,8 @@
 <div id = "land-wrap">
   <div id = "menu">
-    <div class = "nav"><span><a href = "/#/about">ABOUT</a></span></div>
     <div class = "nav"><span><a href = "/#/gallery">GALLERY</a></span></div>
-    <div class = "nav"><span ng-click="showDiv = !showDiv"><a href = "">CONTACT</a></span></div>
+    <div class = "nav"><span><a href = "/#/about">ABOUT</a></span></div>
+    <div class = "nav"><span ng-click="showDiv = !showDiv">CONTACT</span></div>
   </div>
   <div id = "land-hero">
   </div>
@@ -18,3 +18,57 @@
   </div>
 
 </div>
+
+<!-- Gallery........... -->
+
+<div id = "gallery-wrap" ng-controller = "galleryController">
+  <div class = "R3 sides" ng-repeat = "images in paintings">
+    <div class = "canvas sides" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+      <div class = "painting__description" ng-show="hoverEdit">
+        {{images.description}}
+      </div>
+      <img src = "{{images.image}}"></img>
+    </div>
+  </div>
+</div>
+
+
+<!-- About........... -->
+
+<!-- <div id = "about-wrap">
+  <div id = "about-hero">
+    <div id = "exp"></div>
+
+
+    <div id ="bio-wrap">
+      <div id = "bio-title"></div>
+      <div id = "bio-body">
+        <span>WORK </span>&nbsp;
+         When an artist sincerely offers energy, heart and time into a piece,
+        a small part of the artist is also given.
+
+        I obtained my master's in special education from NC State University,
+        taught exceptional populations for 11 years in public schools,
+        recieved my BFA in art from UNC-Greensboro then continued teaching art for a decade in the
+        elementary school setting utilizing the arts to create strategies for learning,
+        achievement and personal expression with a variety of populations.
+        <br>
+        <br>
+        <span>JOY </span>&nbsp;
+        I now am a working artist very much involved with youth camps, community workshops and am
+        pursuing certifications in art therapy. My journey in the arts is one I love sharing with others.
+        <br>
+        <br>
+        <span>Expression </span>&nbsp;
+        Social media sprouted around the new museum in critique of our time as post-analog, which is not
+        true for artists to forgo the sensory immersion of imax or the transfiguration often precedes like!
+        Our experience of everyday life. Also playing with sonic possibilities through the analog and digital
+        world.
+
+        <div id = "signature"><span>—</span> Laura Moffett Myers</div>
+
+      </div>
+
+    </div>
+  </div>
+</div> -->

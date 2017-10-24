@@ -1,5 +1,8 @@
 var moffettcraft  = angular.module('moffettcraft', ['ngRoute', 'duScroll', 'ngAnimate']);
 
+
+
+
   moffettcraft.config(function($routeProvider) {
     $routeProvider
 
@@ -16,8 +19,13 @@ var moffettcraft  = angular.module('moffettcraft', ['ngRoute', 'duScroll', 'ngAn
     .when('/gallery', {
       templateUrl : 'gallery.html',
       controller : 'galleryController'
+    })
+
+    .when('/blog', {
+      templateUrl : 'blog.html',
+      controller : 'blogController'
     });
 
-  
+
 
   });

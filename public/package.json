@@ -1,0 +1,24 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "moffettcraft",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^2.2.25",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpip/moffettcraft.git"
+  },
+  "author": "Daniel Pipkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpip/moffettcraft/issues"
+  },
+  "homepage": "https://github.com/dpip/moffettcraft#readme"
+}

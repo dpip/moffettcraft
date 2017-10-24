@@ -1,0 +1,9 @@
+#blog_wrap {
+  height: 100%;
+  width: 100%;
+  float: left;
+  margin: 0; }
+  #blog_wrap .ex-wrap {
+    margin-top: 50%; }
+
+/*# sourceMappingURL=blog.css.map */

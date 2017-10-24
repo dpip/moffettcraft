@@ -19,22 +19,4 @@ moffettcraft.controller('landController', function($scope, $rootScope, $location
 
 
 
-
-
-  // object oriented images - repeated in gallery
-
-  $rootScope.gallery=[
-      {image:'assets/images/Reunion_notecard_small_res_large.jpg', 'description': 'Renuion'},
-      {image:'assets/images/boat.jpg', 'description': 'Ballard Locks'},
-      {image:'assets/images/turtle.jpg', 'description': 'Topsail Turtle'},
-      {image:'assets/images/rhino.jpg', 'description': 'Rhino'},
-      {image:'assets/images/MoffettcraftArts_2016_Bamboo_Van_Gogh_-_1_1024x1024.jpg', 'description': 'Van Jungle'},
-      {image:'assets/images/hut.jpg', 'description': 'Japanese Hut'},
-      {image:'assets/images/momma-bird.jpg', 'description': 'Glass Bird'},
-      {image:'assets/images/LOTUS.jpg', 'description': 'Lotus in The Park'},
-      {image:'assets/images/g-mama-bird.jpg', 'description': 'Mama-Bird'},
-  ];
-
-
-
 });
